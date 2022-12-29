@@ -18,6 +18,11 @@
       title="docsify-darklight-theme"
       type="text/css"
     />
+    <style>
+      html {
+        color-scheme: light !important;
+      }
+    </style>
   </head>
   <body>
     <div id="app">We are building something special for you ...</div>
@@ -26,6 +31,8 @@
         search: "auto",
         coverpage: false,
         name: "DeckThemes",
+        loadSidebar: true,
+        subMaxLevel: 2,
         search: {
           noData: {
             "/": "No results!",
