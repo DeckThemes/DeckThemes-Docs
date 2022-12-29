@@ -239,3 +239,8 @@ Instead of creating a single file that just stores 1 css variable, a shorthand i
 ```
 
 By putting 2 dashes in front of a key in any inject section, CSS Loader will read the first variable of the key's value, and inject that into the remaining array elements as tabs.
+
+## 🧭 File watcher
+*Requires CSS Loader version 1.4.0+*
+
+If a file called `WATCH` is detected in the themes folder, CSS Loader will start watching file changes to any css file in any theme directory. This may lead to buggy behavior, so it's not enabled by default. This means that if any css file gets edited remotely, CSS Loader will automatically reload all themes, so you can 'live edit' css files.
