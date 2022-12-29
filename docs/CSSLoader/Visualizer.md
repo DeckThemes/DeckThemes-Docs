@@ -8,6 +8,6 @@ The CSSLoader team has made a web visualizer to help understand all features CSS
 
 [You can also access the site here](https://visualizer.deckthemes.com/)
 
-<iframe src="https://visualizer.deckthemes.com/?%7B%22name%22:%20%22hi%22%7D" allowtransparency="true" height="700"></iframe>
+<iframe src="https://visualizer.deckthemes.com" allowtransparency="true" height="700"></iframe>
 
 ?> The [source code](https://github.com/suchmememanyskill/vue-theme-json-visualiser) for the visualizer can be found here
