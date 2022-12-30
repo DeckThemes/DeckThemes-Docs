@@ -4,9 +4,6 @@
   Audio Loader - Docs
 </h1>
 <p align="center">
-  <a href="https://github.com/EMERALD0874/AudioLoader-PackDB/stargazers"><img src="https://img.shields.io/github/stars/EMERALD0874/AudioLoader-PackDB" /></a>
-  <a href="https://github.com/EMERALD0874/AudioLoader-PackDB/commits/main"><img src="https://img.shields.io/github/last-commit/EMERALD0874/AudioLoader-PackDB.svg" /></a>
-  <a href="https://github.com/EMERALD0874/AudioLoader-PackDB/blob/main/LICENSE"><img src="https://img.shields.io/github/license/EMERALD0874/AudioLoader-PackDB" /></a>
   <a href="https://discord.gg/HsU72Kfnpf"><img src="https://img.shields.io/discord/1051660079033745478?color=%235865F2&label=discord" /></a>
   <br>
   <br>
