@@ -1,4 +1,5 @@
 * [Home](/)
+* [Install](Install.md#install)
 * [CSS Loader](CSSLoader/README.md)
   * [CEF Debugger](CSSLoader/Cef_Debugger.md#🌐-cef-debugger)
   * [Features](CSSLoader/Features.md#features)
