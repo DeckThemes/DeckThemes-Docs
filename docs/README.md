@@ -1,6 +1,7 @@
 # CSS Loader & Audio Loader Docs
 - [CSS Loader Docs](/CSSLoader/README.md)
 - [Audio Loader Docs](/AudioLoader/README.md)
+- [Install](Install.md#install)
 
 ## Github Repositories
 - [CSS Loader](https://github.com/suchmememanyskill/SDH-CssLoader)
