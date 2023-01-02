@@ -26,7 +26,7 @@ There is [a template repository](https://github.com/suchmememanyskill/Steam-Deck
 
 ### 🪁 Getting Started
 
-CSS Loader considers all folders in `~/homebrew/themes` that have a `theme.json` or `theme.css` in the root of that subfolder. Usually, themes have the following structure:
+CSS Loader considers all folders in `~/homebrew/themes` that have a `theme.json` or `theme.css` in the root of that subfolder themes. Usually, themes have the following structure:
 
 ```
 homebrew
