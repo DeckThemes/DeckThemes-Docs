@@ -240,6 +240,23 @@ Instead of creating a single file that just stores 1 css variable, a shorthand i
 
 By putting 2 dashes in front of a key in any inject section, CSS Loader will read the first variable of the key's value, and inject that into the remaining array elements as tabs.
 
+## 🚩 Feature Flags
+*Requires Manifest version 6+*
+
+Flags manipulate how a theme is intepreted by CSS Loader. This is used to enable specific niche functionality. There are currently 3 flags
+- `PRESET`: Handles the theme as a preset. Please do not add this flag manually
+- `KEEP_DEPENDENCIES`: Added to emulate old behaviour. If this flag is present, when a theme with dependencies is disabled it's dependencies are not disabled.
+- `OPTIONAL_DEPENDENCIES`: Shows a modal when enabling a theme with this flag present. This modal asks the user if they want to enable the theme, it's dependencies and configure the dependencies.
+
+In theme.json:
+```json
+  "flags": [
+    "PRESET",
+    "KEEP_DEPENDENCIES",
+    "OPTIONAL_DEPENDENCIES"
+  ],
+```
+
 ## 🧭 File watcher
 *Requires CSS Loader version 1.4.0+*
 
