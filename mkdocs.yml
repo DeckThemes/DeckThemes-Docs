@@ -4,7 +4,6 @@ theme:
   features:
     - toc.integrate
     - navigation.instant
-    - navigation.footer
   palette: 
     # Palette toggle for light mode
     - scheme: slate
@@ -19,16 +18,16 @@ theme:
         name: Switch to dark mode
 
 nav:
-  - Home: "/"
-  - Install: "/Install"
-  - Submit: "/Submission"
-  - AudioLoader: "/AudioLoader/"
+  - Home: "index.md"
+  - Install: "Install.md"
+  - Submit: "Submission.md"
+  - AudioLoader: "AudioLoader/index.md"
   - CssLoader: 
-    - Home: "/CssLoader/"
-    - CEF Debugger: "/CSSLoader/Cef_Debugger/"
-    - Features: "/CSSLoader/Features/"
-    - Visualizer: "/CSSLoader/Visualizer/"
-    - Presets: "/CssLoader/Presets"
+    - Home: "CSSLoader/index.md"
+    - CEF Debugger: "CSSLoader/Cef_Debugger.md"
+    - Features: "CSSLoader/Features.md"
+    - Visualizer: "CSSLoader/Visualizer.md"
+    - Presets: "CSSLoader/Presets.md"
   
 markdown_extensions:
   - toc:
