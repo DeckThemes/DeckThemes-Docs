@@ -4,5 +4,6 @@
   * [CEF Debugger](CSSLoader/Cef_Debugger.md#🌐-cef-debugger)
   * [Features](CSSLoader/Features.md#features)
   * [Theme.json Visualizer](CSSLoader/Visualizer.md#visualizer)
+  * [Presets](CssLoader/Presets.md)
 * [Audio Loader](AudioLoader/README.md)
 * [Submit To DeckThemes.com](Submission.md#submit-to-deckthemescom)
