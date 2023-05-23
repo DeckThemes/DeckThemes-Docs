@@ -32,7 +32,3 @@ nav:
 markdown_extensions:
   - toc:
       permalink: true
-
-extra:
-  version:
-    provider: mike
