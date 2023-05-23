@@ -27,7 +27,8 @@ Presets are shown as regular themes. Instead of showing the version and author o
 
 ## Sharing a preset
 
-!> If the preset was created with a theme using a custom image, you are required to put this image in the preset's directory for it to be shared properly. To update the preset after changing the image's location, create a preset with the same name
+!!! warning "Image usage with preset"
+    If the preset was created with a theme using a custom image, you are required to put this image in the preset's directory for it to be shared properly. To update the preset after changing the image's location, create a preset with the same name
 
 0. For steam deck users: Go into desktop mode
 1. Open dolphin (linux) and navigate from the home tab to the `homebrew` directory, then to the `themes` directory. 

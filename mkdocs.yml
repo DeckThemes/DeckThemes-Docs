@@ -1,9 +1,15 @@
 site_name: DeckThemes Docs
+repo_url: https://github.com/beebls/DeckThemes-Docs
+repo_name: DeckThemes-Docs
 theme:
   name: material
   features:
     - toc.integrate
     - navigation.instant
+    - navigation.expand
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tracking
   palette: 
     # Palette toggle for light mode
     - scheme: slate
@@ -17,11 +23,16 @@ theme:
         icon: material/brightness-7
         name: Switch to dark mode
 
+  icon:
+    repo: fontawesome/brands/github
+
 nav:
-  - Home: "index.md"
-  - Install: "Install.md"
-  - Submit: "Submission.md"
-  - AudioLoader: "AudioLoader/index.md"
+  - Home:
+    - Home: "index.md"
+    - Install: "Install.md"
+    - Submit: "Submission.md"
+  - AudioLoader: 
+    - Home: "AudioLoader/index.md"
   - CssLoader: 
     - Home: "CSSLoader/index.md"
     - CEF Debugger: "CSSLoader/Cef_Debugger.md"
@@ -30,5 +41,11 @@ nav:
     - Presets: "CSSLoader/Presets.md"
   
 markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - toc:
       permalink: true

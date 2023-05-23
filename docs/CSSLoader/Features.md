@@ -1,8 +1,6 @@
-# Features
+!!! question "The [source code of CSS Loader](https://github.com/suchmememanyskill/SDH-CssLoader) can be found here"
 
-?> The [source code of CSS Loader](https://github.com/suchmememanyskill/SDH-CssLoader) can be found here
-
-# 🖌️ Simple Themes
+## 🖌️ Simple Themes
 *Requires Manifest Version 1+*
 
 Themes are folders with CSS files and a single `theme.json` file inside. The `theme.json` determines how everything will be displayed and any options if the theme has them. The CSS Loader loads themes from `/home/deck/homebrew/themes`.
@@ -34,22 +32,23 @@ For a simple theme, the `theme.json` should look something like this.
 - An optional description can be added to show a text description in the theme store.
 - The inject tab is a dictionary of relative CSS file paths as keys, and a list of tabs you want the CSS to be injected into.
 - The target field describes what part of the UI your theme themes. This is only useful for submitting a theme. The following options are available, but more can be added by creating an issue:
-  - System-Wide
-  - Background
-  - Keyboard
-  - Home
-  - Background
-  - Library
-  - Store
-  - Friends and Chat
-  - Media
-  - Downloads
-  - Settings
-  - Lock Screen
-  - Tweak
-  - Other
 
-# 🖼️ Complex Themes
+    * System-Wide
+    * Background
+    * Keyboard
+    * Home
+    * Background
+    * Library
+    * Store
+    * Friends and Chat
+    * Media
+    * Downloads
+    * Settings
+    * Lock Screen
+    * Tweak
+    * Other
+
+## 🖼️ Complex Themes
 *Requires Manifest Version 2+*
 
 ![ComplexTheme](img/complextheme.png)
@@ -100,7 +99,7 @@ A complex theme is a theme with patches. Patches are menus that apply additional
 
 Patches allow for choosing between a dropdown, a checkbox (toggle), or a slider for patch selection using the `type` field.
 
-## 🔽 Dropdown
+### 🔽 Dropdown
 *Requires Manifest Version 2+*
 
 `"type": "dropdown"`
@@ -109,7 +108,7 @@ This is the default value. This type gives a dropdown of all keys in the `values
 
 ![dropdown](img/dropdown.jpg)
 
-## 🎚️ Slider
+### 🎚️ Slider
 *Requires Manifest Version 2+*
 
 `"type": "slider"`
@@ -118,7 +117,7 @@ This type gives a slider with the labels of the points of all keys in the `value
 
 ![slider](img/slider.jpg)
 
-## ✅ Checkbox (Toggle)
+### ✅ Checkbox (Toggle)
 *Requires Manifest Version 2+*
 
 `"type": "checkbox"`
@@ -127,16 +126,16 @@ This type represents the `values` field as a toggle. This type is unique in the 
 
 ![checkbox](img/checkbox.jpg)
 
-## 🚫 None
+### 🚫 None
 *Requires Manifest Version 3+*
 
 `"type": "none"`
 
 Displays an arrow with the patch name. Has no functional use. For use with components.
 
-# ➕ Additional Features
+## ➕ Additional Features
 
-## 📁 Local Files
+### 📁 Local Files
 
 You can access files locally from CSS if you use the correct URL. You can access files like fonts, images, and more by using the following URL.
 
@@ -144,7 +143,7 @@ You can access files locally from CSS if you use the correct URL. You can access
 
 [Here is an example.](https://github.com/suchmememanyskill/Steam-Deck-Theme-Template/tree/main/Sample%20Background%20Theme)
 
-## 📦 Adding Dependencies
+### 📦 Adding Dependencies
 *Requires Manifest Version 3+*
 
 Dependencies are useful if you want to bundle another theme or want to make small modifications to an existing theme. All dependencies get enabled alongside your theme.
@@ -164,11 +163,11 @@ In the `themes.json` file, specify a field called `"dependencies"`. This is a di
 
 [Here is an example.](https://github.com/suchmememanyskill/Steam-Deck-Theme-Template/tree/main/Sample%20Dependency%20Theme)
 
-## 🗃️ Components
+### 🗃️ Components
 
 Components are a way to attach extra parts to a selectable patch option. Inside a patch, you can make a `"components"` field (its value is a list), and put the components inside.
 
-### 🎨 Color Picker
+#### 🎨 Color Picker
 *Requires Manifest Version 3+*
 
 ![Color picker](img/color-picker.jpg)
@@ -197,7 +196,7 @@ The color picker component injects a CSS variable with a user-specified color.
 - `css_variable` refers to the name of the CSS variable that will be injected
 - `tabs` refers to what tabs the CSS variable will be injected into
 
-### 📷 Image Picker
+#### 📷 Image Picker
 *Requires Manifest Version 4+*
 
 ![imagepicker](img/image-picker.jpg)
@@ -226,7 +225,7 @@ The image picker component injects a user-supplied file using a file picker into
 - `css_variable` refers to the name of the CSS variable that will be injected
 - `tabs` refers to what tabs the CSS variable will be injected into
 
-## 🔠 CSS Variables
+### 🔠 CSS Variables
 *Requires Manifest Version 5+*
 
 Instead of creating a single file that just stores 1 css variable, a shorthand is available to do it directly in the `theme.json`.
@@ -240,7 +239,7 @@ Instead of creating a single file that just stores 1 css variable, a shorthand i
 
 By putting 2 dashes in front of a key in any inject section, CSS Loader will read the first variable of the key's value, and inject that into the remaining array elements as tabs.
 
-## 🚩 Feature Flags
+### 🚩 Feature Flags
 *Requires Manifest version 6+*
 
 Flags manipulate how a theme is intepreted by CSS Loader. This is used to enable specific niche functionality. There are currently 3 flags
@@ -257,7 +256,7 @@ In theme.json:
   ],
 ```
 
-## 🧭 File watcher
+### 🧭 File watcher
 *Requires CSS Loader version 1.4.0+*
 
 If a file called `WATCH` is detected in the themes folder, CSS Loader will start watching file changes to any css file in any theme directory. This may lead to buggy behavior, so it's not enabled by default. This means that if any css file gets edited remotely, CSS Loader will automatically reload all themes, so you can 'live edit' css files.
