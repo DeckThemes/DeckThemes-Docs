@@ -3,10 +3,10 @@ This page contains information on how to [submit a Theme or Pack for CSS Loader 
 
 If you need any help submitting a Theme or Pack, [contact us via Discord](https://discord.gg/HsU72Kfnpf)
 
-# Submission Criteria
+## Submission Criteria
 DeckThemes has specific criteria on all submissions
 
-## CSS Theme Requirements
+### CSS Theme Requirements
 - I am the original author of this theme or have permission from the original author to make this submission.
 - All copyright of this theme's contents belong to the listed author or is clearly attributed.
 - This theme's target has been marked appropriately and only styles said target.
@@ -20,7 +20,7 @@ DeckThemes has specific criteria on all submissions
 - If this theme targets the keyboard, it applies to the default keyboard.
 - If this is a system-wide theme that also targets the keyboard, the keyboard theming is toggleable
 
-## Audio Pack Requirements
+### Audio Pack Requirements
 These requirements must be followed for all packs.
 
 - You are the original author of the pack or have permission from the original author to make a pull request
@@ -31,7 +31,7 @@ These requirements must be followed for all packs.
 - The pack does not contain loud, distorted, or otherwise bad-faith sound files
 - The pack is only for either music or sounds and only adds or modifies the intended sound files
 
-### Music Pack Requirements
+#### Music Pack Requirements
 All music packs with copyrighted content that do not meet one of the following criteria will most likely be denied. If you are unsure whether your music pack meets one of these criteria, [please reach out to us](/#contact).
 
 - Original compositions and performances
@@ -40,13 +40,13 @@ All music packs with copyrighted content that do not meet one of the following c
 - Music from other console firmware menus\*
 - Other exceptions made by the development team
 
-!> Console firmware music must still be approved by repository maintainers. Music that is unlikely to be used by anyone but the author and music from first-party applications (ex. Wii Shop, Nintendo eShop) may be denied.
+!!! danger "Console firmware music must still be approved by repository maintainers. Music that is unlikely to be used by anyone but the author and music from first-party applications (ex. Wii Shop, Nintendo eShop) may be denied."
 
 
-# Submitting a Theme or Pack
+## Submitting a Theme or Pack
 DeckThemes supports 3 ways to [submit a Theme or Pack](https://deckthemes.com/submit/)
 
-## Git (Preferred)
+### Git (Preferred)
 *Supported by CSS Loader and Audio Loader*
 
 To submit a theme via git, 3 fields need to be filled in:
@@ -54,7 +54,7 @@ To submit a theme via git, 3 fields need to be filled in:
 #### Repo URL
 This is the Url of your repository hosted online. Usually this is hosted on github.
 
-?> Example: `https://github.com/suchmememanyskill/Steam-Deck-Themes`
+!!! example "Example: `https://github.com/suchmememanyskill/Steam-Deck-Themes`"
 
 #### Commit ID
 A commit is a 'version' of your code. Usually the latest commit of a repository is used, but, with this system, you can choose your own version to submit. 
@@ -63,19 +63,19 @@ If this field is left blank, the latest commit of the provided repository is use
 
 ![Commit_ID](img/git_commit.png)
 
-?> Example: `40a5454`
+!!! example "Example: `40a5454`"
 
 #### Subfolder
 The subfolder is the folder path to your theme, taking the repository as root folder.
 
-?> Example: `Clean Gameview`, Assuming your repository contains a folder called `Clean Gameview`
+!!! example "Example: `Clean Gameview`, Assuming your repository contains a folder called `Clean Gameview`"
 
-## Zip
+### Zip
 *Supported by CSS Loader and Audio Loader*
 
 A zip submission is very simple. The only required part is to upload a zip file, containing the theme or pack on the root of the zip
 
-## CSS Only
+### CSS Only
 *Supported by CSS Loader only*
 
 CSS Only submissions are special. They are referred as 'Snippets' and as the name suggests, you can paste css into a text field, and it'll automagically be turned into a theme compatible with CSS Loader. The snippet will be injected into the 'SP', 'QuickAccess' and 'MainMenu' tabs

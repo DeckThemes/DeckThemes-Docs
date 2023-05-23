@@ -10,6 +10,14 @@
   <img src="/CSSLoader/img/Phantom.jpg" alt="CSS Loader screenshot with Phantom and Obsidian" width="80%">
 </p>
 
+## :material-download: Install CSS Loader
+
+### Linux/Steam Deck
+See the [install instructions via decky](/Install) on linux or Steam Deck.
+
+### Windows
+Coming soon.... :eyes:
+
 ## 🎨 Creating a Theme
 
 Development for the CSS Loader is intended to be as simple as possible. That being said, we understand not everyone understands how to edit CSS files. If you have any suggestions for how we can make this guide easier to understand, please feel free to create an issue.

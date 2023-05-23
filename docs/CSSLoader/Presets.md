@@ -40,7 +40,7 @@ Presets are shown as regular themes. Instead of showing the version and author o
 You can now share this .zip file with friends. This will give an identical setup to when the preset was created. Note the themes used in the preset have to be downloaded first
 
 ### Sharing to deckthemes.com
-These presets can also be shared to the theme repository. See [the submission docs](/Submission.md#zip) for more details. The gist of it is as follows:
+These presets can also be shared to the theme repository. See [the submission docs](/Submission#zip) for more details. The gist of it is as follows:
 
 1. Navigate to [DeckThemes](https://deckthemes.com/submit)
 2. Log in with discord

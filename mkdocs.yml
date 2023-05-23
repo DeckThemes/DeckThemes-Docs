@@ -25,26 +25,31 @@ theme:
 
   icon:
     repo: fontawesome/brands/github
+    logo: fontawesome/solid/paint-roller
 
 nav:
   - Home:
     - Home: "index.md"
     - Install: "Install.md"
     - Submit: "Submission.md"
-  - AudioLoader: 
-    - Home: "AudioLoader/index.md"
   - CssLoader: 
     - Home: "CSSLoader/index.md"
     - CEF Debugger: "CSSLoader/Cef_Debugger.md"
     - Features: "CSSLoader/Features.md"
     - Visualizer: "CSSLoader/Visualizer.md"
     - Presets: "CSSLoader/Presets.md"
+  - AudioLoader: 
+    - Home: "AudioLoader/index.md"
   
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
   - def_list
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.tasklist:
       custom_checkbox: true
   - toc:
