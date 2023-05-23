@@ -36,8 +36,8 @@ homebrew
         └── shared.css
 ```
 
-The `theme.json` contains information on how CSS Loader should inject the CSS you provide. For information on how to construct a `theme.json` and see everything it can do, see the [Features](CSSLoader/Features.md#features) page. [A visualizer site](CSSLoader/Visualizer.md#visualizer) is also available to help construct `theme.json` files.
+The `theme.json` contains information on how CSS Loader should inject the CSS you provide. For information on how to construct a `theme.json` and see everything it can do, see the [Features](/CSSLoader/Features#features) page. [A visualizer site](/CSSLoader/Visualizer#visualizer) is also available to help construct `theme.json` files.
 
-To more easily edit and test CSS, you can use the [CEF Debugger](CSSLoader/Cef_Debugger.md#🌐-cef-debugger) to make edits live on your deck.
+To more easily edit and test CSS, you can use the [CEF Debugger](/CSSLoader/Cef_Debugger#🌐-cef-debugger) to make edits live on your deck.
 
-For information on submitting a theme, see [Submit To DeckThemes.com](Submission.md#submit-to-deckthemescom)
+For information on submitting a theme, see [Submit To DeckThemes.com](/Submission#submit-to-deckthemescom)

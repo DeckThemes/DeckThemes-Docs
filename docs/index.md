@@ -1,7 +1,6 @@
-# CSS Loader & Audio Loader Docs
-- [CSS Loader Docs](/CSSLoader/README.md)
-- [Audio Loader Docs](/AudioLoader/README.md)
-- [Install](Install.md#install)
+- [CSS Loader Docs](/CSSLoader/)
+- [Audio Loader Docs](/AudioLoader/)
+- [Install](/Install#install)
 
 ## Github Repositories
 - [CSS Loader](https://github.com/suchmememanyskill/SDH-CssLoader)
@@ -12,6 +11,7 @@
 
 ## Contact
 - [Discord server](https://discord.gg/HsU72Kfnpf)
+- Email: contact@suchmeme.nl
 
 ## ❤️ Special Thanks
 

@@ -32,7 +32,7 @@ These requirements must be followed for all packs.
 - The pack is only for either music or sounds and only adds or modifies the intended sound files
 
 ### Music Pack Requirements
-All music packs with copyrighted content that do not meet one of the following criteria will most likely be denied. If you are unsure whether your music pack meets one of these criteria, [please reach out to us](README.md#contact).
+All music packs with copyrighted content that do not meet one of the following criteria will most likely be denied. If you are unsure whether your music pack meets one of these criteria, [please reach out to us](/#contact).
 
 - Original compositions and performances
 - Copyright-free and public-domain performances
