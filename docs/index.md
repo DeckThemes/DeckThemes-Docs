@@ -7,7 +7,7 @@
 </figure>
 
 <div align="center" markdown>
-[:material-download: Install CSS Loader](/CSSLoader/Install.md){ .md-button .md-button--primary }
+[:material-download: Install CSS Loader](/CSSLoader/Install){ .md-button .md-button--primary }
 [:material-tools: Create a theme with CSS Loader](/CSSLoader/){ .md-button .md-button--primary }
 </div>
 
@@ -21,7 +21,7 @@
 </figure>
 
 <div align="center" markdown>
-[:material-download: Install AudioLoader](/AudioLoader/Install.md){ .md-button .md-button--primary }
+[:material-download: Install AudioLoader](/AudioLoader/Install){ .md-button .md-button--primary }
 [:material-tools: Create a sound pack with AudioLoader](/AudioLoader/){ .md-button .md-button--primary }
 </div>
 
