@@ -2,21 +2,9 @@
   <img src="/CSSLoader/img/logo.png" alt="CSS Loader logo, based on paint-roller from Font Awesome" width="200">
   <br>
   CSS Loader - Docs
-</h1>
-<p align="center">
+  <br>
   <a href="https://discord.gg/HsU72Kfnpf"><img src="https://img.shields.io/discord/1051660079033745478?color=%235865F2&label=discord" /></a>
-  <br>
-  <br>
-  <img src="/CSSLoader/img/Phantom.jpg" alt="CSS Loader screenshot with Phantom and Obsidian" width="80%">
-</p>
-
-## :material-download: Install CSS Loader
-
-### Linux/Steam Deck
-See the [install instructions via decky](/Install) on linux or Steam Deck.
-
-### Windows
-Coming soon.... :eyes:
+</h1>
 
 ## 🎨 Creating a Theme
 

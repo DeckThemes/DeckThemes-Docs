@@ -2,13 +2,9 @@
   <img src="/AudioLoader/img/logo.png#" alt="Audio Loader logo" width="200">
   <br>
   Audio Loader - Docs
-</h1>
-<p align="center">
+  <br>
   <a href="https://discord.gg/HsU72Kfnpf"><img src="https://img.shields.io/discord/1051660079033745478?color=%235865F2&label=discord" /></a>
-  <br>
-  <br>
-  <img src="https://media.discordapp.net/attachments/814629062806601778/1029928716152864809/unknown.png" alt="Audio Loader Pack Browser screenshot" width="80%">
-</p>
+</h1>
 
 # 📦 Creating a Pack
 
@@ -184,4 +180,4 @@ Once you have completed creating your pack, upload the folder containing it to t
 
 # 📨 Uploading a Pack
 
-Please refer to the [Submit to DeckThemes.com](/Submission.md) page for submitting an Audio Pack.
+Please refer to the [Submit to DeckThemes.com](/Submission) page for submitting an Audio Pack.

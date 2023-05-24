@@ -3,6 +3,7 @@ repo_url: https://github.com/beebls/DeckThemes-Docs
 repo_name: DeckThemes-Docs
 theme:
   name: material
+  favicon: favicon.ico
   features:
     - toc.integrate
     - navigation.instant
@@ -10,6 +11,7 @@ theme:
     - navigation.sections
     - navigation.tabs
     - navigation.tracking
+
   palette: 
     # Palette toggle for light mode
     - scheme: slate
@@ -30,16 +32,17 @@ theme:
 nav:
   - Home:
     - Home: "index.md"
-    - Install: "Install.md"
     - Submit: "Submission.md"
   - CssLoader: 
     - Home: "CSSLoader/index.md"
+    - Install: "CSSLoader/Install.md"
     - CEF Debugger: "CSSLoader/Cef_Debugger.md"
     - Features: "CSSLoader/Features.md"
     - Visualizer: "CSSLoader/Visualizer.md"
     - Presets: "CSSLoader/Presets.md"
   - AudioLoader: 
     - Home: "AudioLoader/index.md"
+    - Install: "AudioLoader/Install.md"
   
 markdown_extensions:
   - admonition
@@ -47,6 +50,7 @@ markdown_extensions:
   - pymdownx.superfences
   - def_list
   - attr_list
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
@@ -54,3 +58,14 @@ markdown_extensions:
       custom_checkbox: true
   - toc:
       permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/DeckThemes
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:contact@suchmeme.nl
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/HsU72Kfnpf
+    - icon: fontawesome/brands/patreon
+      link: https://www.patreon.com/deckthemes
