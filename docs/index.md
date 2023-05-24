@@ -9,6 +9,7 @@
 <div align="center" markdown>
 [:material-download: Install CSS Loader](/CSSLoader/Install){ .md-button .md-button--primary }
 [:material-tools: Create a theme with CSS Loader](/CSSLoader/){ .md-button .md-button--primary }
+[:material-magnify: Browse themes](https://deckthemes.com/themes?order=Most%20Downloaded){ .md-button .md-button--primary }
 </div>
 
 -----
@@ -23,6 +24,7 @@
 <div align="center" markdown>
 [:material-download: Install AudioLoader](/AudioLoader/Install){ .md-button .md-button--primary }
 [:material-tools: Create a sound pack with AudioLoader](/AudioLoader/){ .md-button .md-button--primary }
+[:material-magnify: Browse audio packs](https://deckthemes.com/packs?order=Most%20Downloaded){ .md-button .md-button--primary }
 </div>
 
 -----
