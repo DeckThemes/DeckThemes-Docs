@@ -35,7 +35,9 @@ CSS Loader standalone does not use Decky to run. Instead, it runs as a single ba
 
 1. Download the latest .msi release from [Github](https://github.com/beebls/CSSLoader-Desktop/releases)
 2. Run the .msi file and follow the on-screen instructions
-    - After launching `CSSLoader Desktop` for the first time, you are prompted to install the backend.
+3. Launch `CSSLoader Desktop`
+    - If this is your first time running `CSSLoader Desktop`, you are prompted to install the backend. Please do so
+4. Restart Steam
 
 ### Uninstall Standalone
 1. Open task manager and kill `CssLoader-Standalone-Headless.exe`
