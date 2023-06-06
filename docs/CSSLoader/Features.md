@@ -73,6 +73,7 @@ CSS Loader can also regex match tabs, if tab names are a little more dynamic. Fo
     On manifest version 6 or below, or CSS Loader v1.6.x or below, one entry in the tabs list of a css file will always inject into either zero or one tabs. This becomes problematic if for example, two tabs are visible with the same name. Manifest version 7 or CSS Loader v1.7.0+ fixes this and allows to inject into multiple tabs using one named entry.
 
 ### Injection via Tab URL match
+*Requires CSS Loader v1.5.0+*
 
 ![cef-json-list](img/cef-json-list.jpg)
 
