@@ -48,6 +48,37 @@ For a simple theme, the `theme.json` should look something like this.
     * Tweak
     * Other
 
+## :material-tab-search: Finding which tabs to inject to
+CSS Loader has multiple ways of identifying which tab css should be injected to. A tab in this context refers to a virtual window, if you'd like to explore this, see the [CEF Debugger](Cef_Debugger.md)
+
+```json
+{
+  "inject": {
+    "shared.css": ["SP"]
+  }
+}
+```
+
+Specifically, which tab is "SP"?
+
+### Injection via Tab name match
+
+![cef-tab-names.png](img/cef-tab-names.png)
+
+CSS Loader can inject css by the names of tabs. In the screenshot above, entering `"Steam Big Picture Mode"` as tab would inject into a tab named exactly `Steam Big Picture Mode`
+
+CSS Loader can also regex match tabs, if tab names are a little more dynamic. For example, in the screenshot above, `QuickAccess_uid82` has numbers at the end that change every time Big Picture Mode is launched. To remedy this, `"QuickAccess.*"` can be used as tab name, which injects into the first tab starting with `QuickAccess`
+
+!!! warning "CSS Loader v1.7.0"
+    On manifest version 6 or below, or CSS Loader v1.6.x or below, one entry in the tabs list of a css file will always inject into either zero or one tabs. This becomes problematic if for example, two tabs are visible with the same name. Manifest version 7 or CSS Loader v1.7.0+ fixes this and allows to inject into multiple tabs using one named entry.
+
+### Injection via Tab URL match
+
+![cef-json-list](img/cef-json-list.jpg)
+
+CSS Loader can also inject css by a part of the internal URL used by Valve. A prime example for this would be the Steam store, as its tab name changes to the name of the game being viewed. The internal URL always contains `https://store.steampowered.com/`. A tab match can be constructed by writing the part of the URL between `~`, as example: `"~https://store.steampowered.com/~"`.
+
+
 ## 🖼️ Complex Themes
 *Requires Manifest Version 2+*
 
