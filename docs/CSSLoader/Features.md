@@ -281,12 +281,42 @@ Flags manipulate how a theme is intepreted by CSS Loader. This is used to enable
 
 In theme.json:
 ```json
-  "flags": [
-    "PRESET",
-    "KEEP_DEPENDENCIES",
-    "OPTIONAL_DEPENDENCIES"
-  ],
+"flags": [
+  "PRESET",
+  "KEEP_DEPENDENCIES",
+  "OPTIONAL_DEPENDENCIES"
+],
 ```
+
+### :material-dock-window: Tab mappings
+*Requires Manifest version 7+*
+
+To avoid copy pasting the same tabs over and over, manifest v7 introduces a feature called tab mappings. This allows you to create custom definitions for tabs that will get replaced with the tabs defined in a tab mapping
+
+```json
+"tabs": {
+    "custom_name": ["Steam Big Picture Mode", "MainMenu.*"]
+},
+"inject": {
+    "shared.css": ["custom_name"],
+    "shared2.css": ["custom_name"]
+}
+```
+
+The above will inject shared.css and shared2.css into the Steam Big Picture Mode and MainMenu tabs.
+
+```json
+"tabs": {
+    "default": ["Steam Big Picture Mode", "MainMenu.*"]
+},
+"inject": {
+    "shared.css": [],
+    "shared2.css": []
+}
+```
+
+A special tab mapping name called "default" can be used to create a custom default when no tabs are specified. This will result in the same behaviour as the first example.
+
 
 ### 🧭 File watcher
 *Requires CSS Loader version 1.4.0+*
