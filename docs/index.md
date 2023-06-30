@@ -46,4 +46,8 @@ The CSS Loader logo is a modified version of the [paint-roller icon](https://fon
   .md-content__inner h2:first-of-type {
     margin-top: 0;
   }
+
+  .md-nav.md-nav--secondary .md-nav__list {
+    display: none;
+  }
 </style>

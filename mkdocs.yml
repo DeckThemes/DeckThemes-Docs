@@ -33,7 +33,7 @@ nav:
   - Home:
     - Home: "index.md"
     - Submit: "Submission.md"
-  - CssLoader: 
+  - CSS Loader: 
     - Home: "CSSLoader/index.md"
     - Install: "CSSLoader/Install.md"
     - CEF Debugger: "CSSLoader/Cef_Debugger.md"
