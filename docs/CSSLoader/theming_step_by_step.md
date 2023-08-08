@@ -12,6 +12,7 @@ This page will guide you through creating a theme using CSS Loader
 - Having Visual Studio Code installed
     - Download link for [Visual Studio Code](https://code.visualstudio.com/)
     - It is recommended to install the [CSS Loader](https://marketplace.visualstudio.com/items?itemName=DeckThemes.css-loader-for-vs-code) extension for Visual Studio Code, to help editing the `theme.json`
+    - It is recommended to install the [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens) extension to more easily spot errors made in css and json files
 
 ## Introduction
 
@@ -54,4 +55,42 @@ Time to create the file structure for your theme:
 3. Create a file called `theme.json` in this new folder.
 4. Create a file called `share.css` in this new folder.
 
+### Setting up the theme.json
 
+Open up the theme.json inside Visual Studio Code, and copy the following snippet inside of it
+
+```json
+{
+    "name": "Name of your theme",
+    "author": "Your username",
+    "version": "v1.0",
+    "description": "A description to your theme",
+    "target": "Other",
+    "manifest_version": 8,
+    "inject": {
+        "shared.css": ["bigpicture", "QuickAccess", "MainMenu"]
+    }
+}
+```
+
+- `name`: The name of your theme
+- `author`: The author of your theme (probably yourself)
+- `version`: The version of your theme. It's recommended to [follow semver semantics](https://docs.npmjs.com/about-semantic-versioning)
+- `description`: The description of your theme. Can also be input into the site during submitting the theme.
+- `target`: The target of your theme. Can also be input into the site during submitting the theme.
+- `manifest_version`: Defines the features you can use inside the theme.json. The latest manifest version is 8.
+- `inject`: Defines which files gets injected into which tabs. `shared.css` defines the css file to be injected, the array behind it contains which tabs it should be injected into. Please replace `["bigpicture", "QuickAccess", "MainMenu"]` with the tabs you want to inject css into.
+
+After making edits to the `theme.json` (or any .css file), you need to reload your themes before the changes apply. You can let CSS Loader automatically reload using the [file watcher](./Features.md#file-watcher) feature.
+
+## Making CSS
+
+1. Connect to [the CEF debugger](./theming_step_by_step.md)
+2. Connect to the tab you want to make edits to
+3. [Give advice on how to theme specific elements]
+4. Copy your changes to `shared.css` inside your newly created folder on your device.
+
+
+## Closing
+
+If you need any help, feel free to join [our discord](https://discord.gg/HsU72Kfnpf). More features of the `theme.json` can be found inside the [Features](./Features.md) tab.
