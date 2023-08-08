@@ -31,22 +31,31 @@ For a simple theme, the `theme.json` should look something like this.
 - The manifest version tells the CSS Loader which version of `themes.json` you are using. The current version is `4`.
 - An optional description can be added to show a text description in the theme store.
 - The inject tab is a dictionary of relative CSS file paths as keys, and a list of tabs you want the CSS to be injected into.
-- The target field describes what part of the UI your theme themes. This is only useful for submitting a theme. The following options are available, but more can be added by creating an issue:
+- The target field describes what part of the UI your theme themes. This is only useful for submitting a theme. The following options are available, but more can be added by creating an [issue on github](https://github.com/DeckThemes/CssLoader-ThemeApi/issues):
 
-    * System-Wide
-    * Background
-    * Keyboard
-    * Home
-    * Background
-    * Library
-    * Store
-    * Friends and Chat
-    * Media
-    * Downloads
-    * Settings
-    * Lock Screen
-    * Tweak
-    * Other
+<ul id="targets" style="margin-left: 40px;">
+</ul>
+
+<script>
+  async function fetch_targets(){
+    res = await fetch("https://api.deckthemes.com/themes/filters?type=CSS", {
+      method: "GET",
+      mode: "cors"
+    });
+    console.log(res);
+
+    const json = await res.json()
+    const elem = document.getElementById("targets")
+
+    for (const [key, value] of Object.entries(json.filters)) {
+      li = document.createElement('li');
+      li.textContent = key;
+      elem.appendChild(li);
+    }
+  }
+
+  fetch_targets();
+</script>
 
 ## :material-tab-search: Finding which tabs to inject to
 CSS Loader has multiple ways of identifying which tab css should be injected to. A tab in this context refers to a virtual window, if you'd like to explore this, see the [CEF Debugger](Cef_Debugger.md)
