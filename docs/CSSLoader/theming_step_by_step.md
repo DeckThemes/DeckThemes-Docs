@@ -14,3 +14,44 @@ This page will guide you through creating a theme using CSS Loader
     - It is recommended to install the [CSS Loader](https://marketplace.visualstudio.com/items?itemName=DeckThemes.css-loader-for-vs-code) extension for Visual Studio Code, to help editing the `theme.json`
 
 ## Introduction
+
+The Steam Deck (or Big Picture Mode) UI is written entirely as a webpage. This means you can style it the same way as a regular web page too, namely using CSS. CSS defines how a webpage should 'look'. Using CSS, for example you can say 'Make every paragraphs on this page red'.
+
+Steam is using CEF (Chromium Embedded Framework) version 85 under the hood. This makes it very similar in behavior to the regular Chrome/Chromium browser. Just like a regular browser, CEF can open multiple tabs. Steam uses this feature to display different parts of the UI. 
+
+Here's an example of the tabs the Big Picture Mode UI uses:
+
+![Cef Tab Names](./img/cef-tab-names.png){align=left}
+
+- `QuickAccess_uid(number)`: When the :material-dots-horizontal: button is pressed, this tab is displayed. CSS Loader offers a shorthand for this tab called `QuickAccess`.
+- `MainMenu_uid(number)`: When the `STEAM` button is pressed, this tab is displayed. CSS Loader offers a shorthand for this tab called `MainMenu`.
+- `notificationtoasts_uid(number)`: When a notification shows up in the bottom right, this tab is displayed. You can target this tab using the definition `notificationtoasts.*`.
+- `data:text/html(...)`, `(Steam store page name)`: Whenever a webpage is displayed, like the steam store, this tab is used. CSS Loader offers a shorthand for this tab called `store`.
+- `Steam Big Picture Mode`: The main content window of BPM. If it isn't in a sidebar menu, it's likely displayed here. CSS Loader offers a shorthand for this tab called `bigpicture`.
+
+<div style="clear: left;" />
+
+## Format of a theme
+
+CSS Loader is made to inject CSS into arbitrary Steam tabs. It does this by loading a definition of which .css files should be injected where. This definitions file is called `theme.json`. More about all available features in this file can be read in the [Features](Features.md) page.
+
+CSS Loader considers all folders in `~/homebrew/themes` that have a `theme.json` in the root of that subfolder themes. Usually, themes have the following structure:
+
+```
+homebrew
+└── themes
+    └── My Epic Theme
+        ├── theme.json
+        └── shared.css
+```
+
+Time to create the file structure for your theme:
+
+1. Open the themes folder
+    - On Windows, open `CSSLoader Desktop`, navigate to the `Manage` tab and `Open Themes Directory`
+    - On Steam Deck, navigate to `Home(~) > homebrew > themes`
+2. Create a new folder. This folder should be the name of your theme.
+3. Create a file called `theme.json` in this new folder.
+4. Create a file called `share.css` in this new folder.
+
+
