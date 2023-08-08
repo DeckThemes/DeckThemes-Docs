@@ -36,6 +36,7 @@ nav:
   - CSS Loader: 
     - Home: "CSSLoader/index.md"
     - Install: "CSSLoader/Install.md"
+    - Theming step by step: "CSSLoader/theming_step_by_step.md"
     - CEF Debugger: "CSSLoader/Cef_Debugger.md"
     - Features: "CSSLoader/Features.md"
     - Visualizer: "CSSLoader/Visualizer.md"
