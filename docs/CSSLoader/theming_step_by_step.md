@@ -1,3 +1,11 @@
+<style>
+@media only screen and (max-width: 800px) {
+  ul {
+    clear: left;
+  }
+}
+</style>
+
 This page will guide you through creating a theme using CSS Loader
 
 ## Prerequisites
