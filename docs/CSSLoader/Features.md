@@ -16,7 +16,7 @@ For a simple theme, the `theme.json` should look something like this.
   "name": "Theme Title",
   "author": "GitHubUsername",
   "target": "Library",
-  "manifest_version": 4,
+  "manifest_version": 8,
   "description": "This is an example description.",
   "version": "v1.0",
   "inject": {
@@ -28,7 +28,7 @@ For a simple theme, the `theme.json` should look something like this.
 - The name element describes the theme name. This is also used as the folder name for the theme store.
 - The author element describes the theme author.
 - An optional version field can be added. If no version field is found, the version defaults to `v1.0`.
-- The manifest version tells the CSS Loader which version of `themes.json` you are using. The current version is `4`.
+- The manifest version tells the CSS Loader which version of `themes.json` you are using. The current version is `8`.
 - An optional description can be added to show a text description in the theme store.
 - The inject tab is a dictionary of relative CSS file paths as keys, and a list of tabs you want the CSS to be injected into.
 - The target field describes what part of the UI your theme themes. This is only useful for submitting a theme. The following options are available, but more can be added by creating an issue:
