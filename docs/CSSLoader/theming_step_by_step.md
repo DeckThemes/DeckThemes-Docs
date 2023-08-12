@@ -132,17 +132,15 @@ This paragraph will explain some of the features the CEF debugger (which essenti
 
 ![inspector](img/debugger2.png)
 
-The **Viewport** gives a visual representation of the current attached tab. Any CSS edits you do will be displayed in real-time here.
+The **Viewport** gives a visual representation of the currently attached tab. Any CSS edits you do will be displayed in real-time here.
 
-The **Element Selector**, after clicking it, allows clicking anywhere in the viewport, and seeing the HTML element that resides there. This can be used for example, to find out which specific element is applying a color of background at a specific location of the screen.
+Upon clicking the **Element Selector**, you can click anywhere in the viewport, and see the HTML element that resides there. This can be used, for example, to find out which specific element is responsible for the background color in an area of the screen.
 
-After clicking on an element with the Element Selector, the **Selected Element** will appear in the top right panel of the screen. This gives information about what element just got selected, where it's positioned in the hierarchy of the page and what attributes it has.
+After clicking on an element with the Element Selector, the **Selected Element** will appear in the top right panel of the screen. This gives information about the element, such as where it's positioned in the hierarchy of the page and what attributes it has.
 
-After selecting an element, the **CSS Rules** for that element is shown in the bottom right panel of the screen. This shows in order, from highest to lowest, which CSS rules are applied. In here you can experiment applying different CSS properties to specific elements. This can also be used to gather selectors used to apply specific CSS to specific elements.
+After selecting an element, the **CSS Rules** for that element are shown in the bottom right panel of the screen. This shows, in order from highest to lowest specificity, which CSS rules are applied. Here, you can experiment with applying different CSS properties to elements. This can also be used to find the selectors an element uses, in order to apply specific CSS to that element.
 
-In the above screenshot, the 'Steam' tab is selected, but not currently highlighted. The relevant CSS selector for this is the topmost selector, `.gamepadtabbedpage_Tab_3eEbS.gamepadtabbedpage_Selected_3Gp1b:not(.gpfocus)`.
-
-To change the background of, for this example, a tab menu that is selected but not highlighted, the following CSS can be used
+In the above screenshot, the 'Steam' tab is selected, but not currently highlighted. The relevant CSS selector for this is the topmost selector, `.gamepadtabbedpage_Tab_3eEbS.gamepadtabbedpage_Selected_3Gp1b:not(.gpfocus)`
 
 ```css
 .gamepadtabbedpage_Tab_3eEbS.gamepadtabbedpage_Selected_3Gp1b:not(.gpfocus) {
