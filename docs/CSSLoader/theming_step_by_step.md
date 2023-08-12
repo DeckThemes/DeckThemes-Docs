@@ -21,7 +21,7 @@ Desktop Steam, as well as the Big Picture/Steam Deck UI are written as webpages.
 
 For example, consider the following css rule:
 
-```
+```css
 p {
   color: black;
   background-color: lightblue;
@@ -111,14 +111,41 @@ You can also let CSS Loader automatically reload using the [file watcher](./Feat
 
 ## Making CSS
 
-1. Connect to [the CEF debugger](./theming_step_by_step.md)
-2. Connect to the tab you want to make edits to
-3. [Give advice on how to theme specific elements]
+1. Connect to [the CEF debugger](./Cef_Debugger.md)
+2. Connect to the tab you want to make edits to in the CEF debugger
+3. Find and test the relevant edits in the CEF debugger
+    - See [Using the CEF debugger effectively](#using-the-cef-debugger-effectively) for more information on how to to do this.
 4. Copy your changes to `shared.css` inside your newly created folder on your device.
-5. [Reload CSS Loader](#reloading-theme)
+5. [Reload CSS Loader](#reloading-theme) to load your new theme.
+
+## Using the CEF debugger effectively
+
+This paragraph will explain some of the features the CEF debugger (which essentially is inspect element for the web-based Steam UI) to help create a theme. 
+
+![inspector](img/debugger2.png)
+
+The **Viewport** gives a visual representation of the current attached tab. Any CSS edits you do will be displayed in real-time here.
+
+The **Element Selector**, after clicking it, allows clicking anywhere in the viewport, and seeing the HTML element that resides there. This can be used for example, to find out which specific element is applying a color of background at a specific location of the screen.
+
+After clicking on an element with the Element Selector, the **Selected Element** will appear in the top right panel of the screen. This gives information about what element just got selected, where it's positioned in the hierarchy of the page and what attributes it has.
+
+After selecting an element, the **CSS Rules** for that element is shown in the bottom right panel of the screen. This shows in order, from highest to lowest, which CSS rules are applied. In here you can experiment applying different CSS properties to specific elements. This can also be used to gather selectors used to apply specific CSS to specific elements.
+
+In the above screenshot, the 'Steam' tab is selected, but not currently highlighted. The relevant CSS selector for this is the topmost selector, `.gamepadtabbedpage_Tab_3eEbS.gamepadtabbedpage_Selected_3Gp1b:not(.gpfocus)`.
+
+To change the background of, for this example, a tab menu that is selected but not highlighted, the following CSS can be used
+
+```css
+.gamepadtabbedpage_Tab_3eEbS.gamepadtabbedpage_Selected_3Gp1b:not(.gpfocus) {
+  background: red;
+}
+```
 
 ## Closing
 
 If you need any help, feel free to join [our discord](https://discord.gg/HsU72Kfnpf).
 
 This is just the surface-level, if you wish to explore more features of CSS Loader, continue browsing the docs and the [features](./Features.md) page.
+
+If you'd like to submit your theme to the [DeckThemes](https://deckthemes.com/) site, see the [submission documentation](../Submission.md)
