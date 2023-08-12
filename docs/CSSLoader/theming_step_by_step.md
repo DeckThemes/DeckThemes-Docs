@@ -13,7 +13,7 @@ This page will guide you through creating a theme using CSS Loader
 - Knowledge of CSS and JSON
     - If you don't know CSS, [W3Schools](https://www.w3schools.com/css/default.asp) docs are a great starting point.
 - CSS Loader
-    - Instruction for installing CSS Loader on Steam Deck or Windows can be found [here.](INSERT LINK IM LAZY)
+    - Instruction for installing CSS Loader on Steam Deck or Windows can be found [here.](Install.md)
     - If you are on Steam Deck, it is recommended to have an external monitor or PC/Laptop for developing.
         - When developing on a different device than the one running CSS Loader, you should have knowledge of how to transfer files between your current device and your Deck.
             - First, enable ssh on the Steam Deck using Konsole on desktop mode: `sudo systemctl enable sshd && sudo systemctl start sshd`. Then, on the external PC/Laptop install WinSCP, and enter your Steam Deck IP, username (by default `deck`) and password. Steam Deck IP can be found in system settings, under your WIFI connection.
