@@ -3,17 +3,17 @@ This page will guide you through creating a theme using CSS Loader
 ## Prerequisites
 
 - Knowledge of CSS and JSON
-  - If you don't know CSS, [W3Schools](https://www.w3schools.com/css/default.asp) docs are a great starting point.
+    - If you don't know CSS, [W3Schools](https://www.w3schools.com/css/default.asp) docs are a great starting point.
 - CSS Loader
-  - Instruction for installing CSS Loader on Steam Deck or Windows can be found [here.](INSERT LINK IM LAZY)
-  - If you are on Steam Deck, it is recommended to have an external monitor or PC/Laptop for developing.
-    - When developing on a different device than the one running CSS Loader, you should have knowledge of how to transfer files between your current device and your Deck.
-      - First, enable ssh on the Steam Deck using Konsole on desktop mode: `sudo systemctl enable sshd && sudo systemctl start sshd`. Then, on the external PC/Laptop install WinSCP, and enter your Steam Deck IP, username (by default `deck`) and password. Steam Deck IP can be found in system settings, under your WIFI connection.
+    - Instruction for installing CSS Loader on Steam Deck or Windows can be found [here.](INSERT LINK IM LAZY)
+    - If you are on Steam Deck, it is recommended to have an external monitor or PC/Laptop for developing.
+        - When developing on a different device than the one running CSS Loader, you should have knowledge of how to transfer files between your current device and your Deck.
+            - First, enable ssh on the Steam Deck using Konsole on desktop mode: `sudo systemctl enable sshd && sudo systemctl start sshd`. Then, on the external PC/Laptop install WinSCP, and enter your Steam Deck IP, username (by default `deck`) and password. Steam Deck IP can be found in system settings, under your WIFI connection.
 - Visual Studio Code
-  - Downloads for VSCode can be found [here.](https://code.visualstudio.com/)
-  - Additionally, we recommend the use of extensions to help you write error-free JSON and CSS.
-    - [CSS Loader for VSCode](https://marketplace.visualstudio.com/items?itemName=DeckThemes.css-loader-for-vs-code) gives you descriptions of all of the properties in a `theme.json` file.
-    - [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens) helps you to spot errors in both CSS and JSON files.
+    - Downloads for VSCode can be found [here.](https://code.visualstudio.com/)
+    - Additionally, we recommend the use of extensions to help you write error-free JSON and CSS.
+        - [CSS Loader for VSCode](https://marketplace.visualstudio.com/items?itemName=DeckThemes.css-loader-for-vs-code) gives you descriptions of all of the properties in a `theme.json` file.
+        - [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens) helps you to spot errors in both CSS and JSON files.
 
 ## Introduction to CSS and Steam UI
 
