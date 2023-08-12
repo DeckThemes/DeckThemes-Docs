@@ -117,7 +117,7 @@ To manually reload your theme:
 
 You can also let CSS Loader automatically reload using the [file watcher](./Features.md#file-watcher) feature.
 
-## Making CSS
+## Making CSS Patches
 
 1. Connect to [the CEF debugger](./Cef_Debugger.md)
 2. Connect to the tab you want to make edits to in the CEF debugger
@@ -126,7 +126,7 @@ You can also let CSS Loader automatically reload using the [file watcher](./Feat
 4. Copy your changes to `shared.css` inside your newly created folder on your device.
 5. [Reload CSS Loader](#reloading-theme) to load your new theme.
 
-## Using the CEF debugger effectively
+## Using the CEF Debugger Effectively
 
 This paragraph will explain some of the features the CEF debugger (which essentially is inspect element for the web-based Steam UI) to help create a theme. 
 
