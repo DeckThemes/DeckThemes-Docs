@@ -333,7 +333,7 @@ A special tab mapping name called "default" can be used to create a custom defau
 ### :material-hammer-wrench: Nav Patching
 *Requires Manifest version 9+*
 
-When hiding elements that are selectable by controller navigation, it most of the time is still selectable by controller navigation, despite it being hidden. The 'Nav Patch' fixes this by checking for `display: none;` on .Focusable elements, and skipping those in the controller navigation routine.
+When using `display: none` on elements, sometimes these hidden elements are still selectable by the controller navigation. The 'Nav Patch' fixes this by checking for `display: none;` on .Focusable elements, and skipping those in the controller navigation routine.
 
 You can enable this by putting `REQUIRE_NAV_PATCH` in your theme's flags.
 

@@ -12,7 +12,7 @@ First, enter the CSS Loader QAM menu
 
 1. Open the Quick Access Menu
 2. Select the 'Plug' tab
-3. Select 'Css Loader'
+3. Select 'CSS Loader'
 
 Then
 
