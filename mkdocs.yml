@@ -36,10 +36,11 @@ nav:
   - CSS Loader: 
     - Home: "CSSLoader/index.md"
     - Install: "CSSLoader/Install.md"
+    - Theming Step By Step: "CSSLoader/theming_step_by_step.md"
     - CEF Debugger: "CSSLoader/Cef_Debugger.md"
     - Features: "CSSLoader/Features.md"
     - Visualizer: "CSSLoader/Visualizer.md"
-    - Presets: "CSSLoader/Presets.md"
+    - Profiles: "CSSLoader/Profiles.md"
   - AudioLoader: 
     - Home: "AudioLoader/index.md"
     - Install: "AudioLoader/Install.md"

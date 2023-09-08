@@ -1,6 +1,6 @@
 !!! question "The [source code of CSS Loader](https://github.com/suchmememanyskill/SDH-CssLoader) can be found here"
 
-## 🖌️ Simple Themes
+## :material-brush: Simple Themes
 *Requires Manifest Version 1+*
 
 Themes are folders with CSS files and a single `theme.json` file inside. The `theme.json` determines how everything will be displayed and any options if the theme has them. The CSS Loader loads themes from `/home/deck/homebrew/themes`.
@@ -31,22 +31,31 @@ For a simple theme, the `theme.json` should look something like this.
 - The manifest version tells the CSS Loader which version of `themes.json` you are using. The current version is `8`.
 - An optional description can be added to show a text description in the theme store.
 - The inject tab is a dictionary of relative CSS file paths as keys, and a list of tabs you want the CSS to be injected into.
-- The target field describes what part of the UI your theme themes. This is only useful for submitting a theme. The following options are available, but more can be added by creating an issue:
+- The target field describes what part of the UI your theme themes. This is only useful for submitting a theme. The following options are available, but more can be added by creating an [issue on github](https://github.com/DeckThemes/CssLoader-ThemeApi/issues):
 
-    * System-Wide
-    * Background
-    * Keyboard
-    * Home
-    * Background
-    * Library
-    * Store
-    * Friends and Chat
-    * Media
-    * Downloads
-    * Settings
-    * Lock Screen
-    * Tweak
-    * Other
+<ul id="targets" style="margin-left: 40px;">
+</ul>
+
+<script>
+  async function fetch_targets(){
+    res = await fetch("https://api.deckthemes.com/themes/filters?type=CSS", {
+      method: "GET",
+      mode: "cors"
+    });
+    console.log(res);
+
+    const json = await res.json()
+    const elem = document.getElementById("targets")
+
+    for (const [key, value] of Object.entries(json.filters)) {
+      li = document.createElement('li');
+      li.textContent = key;
+      elem.appendChild(li);
+    }
+  }
+
+  fetch_targets();
+</script>
 
 ## :material-tab-search: Finding which tabs to inject to
 CSS Loader has multiple ways of identifying which tab css should be injected to. A tab in this context refers to a virtual window, if you'd like to explore this, see the [CEF Debugger](Cef_Debugger.md)
@@ -80,7 +89,7 @@ CSS Loader can also regex match tabs, if tab names are a little more dynamic. Fo
 CSS Loader can also inject css by a part of the internal URL used by Valve. A prime example for this would be the Steam store, as its tab name changes to the name of the game being viewed. The internal URL always contains `https://store.steampowered.com/`. A tab match can be constructed by writing the part of the URL between `~`, as example: `"~https://store.steampowered.com/~"`.
 
 
-## 🖼️ Complex Themes
+## :material-image: Complex Themes
 *Requires Manifest Version 2+*
 
 ![ComplexTheme](img/complextheme.png)
@@ -131,7 +140,7 @@ A complex theme is a theme with patches. Patches are menus that apply additional
 
 Patches allow for choosing between a dropdown, a checkbox (toggle), or a slider for patch selection using the `type` field.
 
-### 🔽 Dropdown
+### :fontawesome-solid-list: Dropdown
 *Requires Manifest Version 2+*
 
 `"type": "dropdown"`
@@ -140,7 +149,7 @@ This is the default value. This type gives a dropdown of all keys in the `values
 
 ![dropdown](img/dropdown.jpg)
 
-### 🎚️ Slider
+### :fontawesome-solid-sliders: Slider
 *Requires Manifest Version 2+*
 
 `"type": "slider"`
@@ -149,7 +158,7 @@ This type gives a slider with the labels of the points of all keys in the `value
 
 ![slider](img/slider.jpg)
 
-### ✅ Checkbox (Toggle)
+### :material-checkbox-marked: Checkbox (Toggle)
 *Requires Manifest Version 2+*
 
 `"type": "checkbox"`
@@ -158,16 +167,16 @@ This type represents the `values` field as a toggle. This type is unique in the 
 
 ![checkbox](img/checkbox.jpg)
 
-### 🚫 None
+### :material-file-hidden: None
 *Requires Manifest Version 3+*
 
 `"type": "none"`
 
 Displays an arrow with the patch name. Has no functional use. For use with components.
 
-## ➕ Additional Features
+## :material-plus: Additional Features
 
-### 📁 Local Files
+### :material-folder: Local Files
 
 You can access files locally from CSS if you use the correct URL. You can access files like fonts, images, and more by using the following URL.
 
@@ -175,7 +184,7 @@ You can access files locally from CSS if you use the correct URL. You can access
 
 [Here is an example.](https://github.com/suchmememanyskill/Steam-Deck-Theme-Template/tree/main/Sample%20Background%20Theme)
 
-### 📦 Adding Dependencies
+### :material-zip-box: Adding Dependencies
 *Requires Manifest Version 3+*
 
 Dependencies are useful if you want to bundle another theme or want to make small modifications to an existing theme. All dependencies get enabled alongside your theme.
@@ -195,11 +204,11 @@ In the `themes.json` file, specify a field called `"dependencies"`. This is a di
 
 [Here is an example.](https://github.com/suchmememanyskill/Steam-Deck-Theme-Template/tree/main/Sample%20Dependency%20Theme)
 
-### 🗃️ Components
+### :material-file-cabinet: Components
 
 Components are a way to attach extra parts to a selectable patch option. Inside a patch, you can make a `"components"` field (its value is a list), and put the components inside.
 
-#### 🎨 Color Picker
+#### :material-palette: Color Picker
 *Requires Manifest Version 3+*
 
 ![Color picker](img/color-picker.jpg)
@@ -228,7 +237,7 @@ The color picker component injects a CSS variable with a user-specified color.
 - `css_variable` refers to the name of the CSS variable that will be injected
 - `tabs` refers to what tabs the CSS variable will be injected into
 
-#### 📷 Image Picker
+#### :material-camera: Image Picker
 *Requires Manifest Version 4+*
 
 ![imagepicker](img/image-picker.jpg)
@@ -257,7 +266,7 @@ The image picker component injects a user-supplied file using a file picker into
 - `css_variable` refers to the name of the CSS variable that will be injected
 - `tabs` refers to what tabs the CSS variable will be injected into
 
-### 🔠 CSS Variables
+### :material-format-letter-spacing-variant: CSS Variables
 *Requires Manifest Version 5+*
 
 Instead of creating a single file that just stores 1 css variable, a shorthand is available to do it directly in the `theme.json`.
@@ -271,7 +280,7 @@ Instead of creating a single file that just stores 1 css variable, a shorthand i
 
 By putting 2 dashes in front of a key in any inject section, CSS Loader will read the first variable of the key's value, and inject that into the remaining array elements as tabs.
 
-### 🚩 Feature Flags
+### :fontawesome-solid-flag: Feature Flags
 *Requires Manifest version 6+*
 
 Flags manipulate how a theme is intepreted by CSS Loader. This is used to enable specific niche functionality. There are currently 3 flags
@@ -279,13 +288,15 @@ Flags manipulate how a theme is intepreted by CSS Loader. This is used to enable
 - `PRESET`: Handles the theme as a preset. Please do not add this flag manually
 - `KEEP_DEPENDENCIES`: Added to emulate old behaviour. If this flag is present, when a theme with dependencies is disabled it's dependencies are not disabled.
 - `OPTIONAL_DEPENDENCIES`: Shows a modal when enabling a theme with this flag present. This modal asks the user if they want to enable the theme, it's dependencies and configure the dependencies.
+- `REQUIRE_NAV_PATCH`: Forces patching the SteamUI controller navigation. See below for more details.
 
 In theme.json:
 ```json
 "flags": [
   "PRESET",
   "KEEP_DEPENDENCIES",
-  "OPTIONAL_DEPENDENCIES"
+  "OPTIONAL_DEPENDENCIES",
+  "REQUIRE_NAV_PATCH"
 ],
 ```
 
@@ -319,7 +330,44 @@ The above will inject shared.css and shared2.css into the Steam Big Picture Mode
 A special tab mapping name called "default" can be used to create a custom default when no tabs are specified. This will result in the same behaviour as the first example.
 
 
-### 🧭 File watcher
+### :material-hammer-wrench: Nav Patching
+*Requires Manifest version 9+*
+
+When using `display: none` on elements, sometimes these hidden elements are still selectable by the controller navigation. The 'Nav Patch' fixes this by checking for `display: none;` on .Focusable elements, and skipping those in the controller navigation routine.
+
+You can enable this by putting `REQUIRE_NAV_PATCH` in your theme's flags.
+
+### :material-rename: Renaming themes
+*Requires Manifest version 9+*
+
+The `name` attribute in the theme.json has been used in store submissions to name the theme's folder as well. This makes it tricky to change the name of the theme, as it's folder also changes. It's essentially treated as a new theme.
+
+Manifest v9 solves this by introducing the `display_name` attribute. This attribute allows you to set the name that is displayed to users, while keeping the folder name the same.
+
+```json
+{
+    "name": "My epic theme",
+    "display_name": "My epic theme special edition"
+}
+```
+
+### :material-checkbox-multiple-outline: Multiple targets
+*Requires Manifest version 9+*
+
+On the DeckThemes site it has always been enforced that a theme could only use a single target. Since manifest v9 it is possible to specify a JSON array of targets. This makes marking a theme with multiple targets possible.
+
+```json
+{
+    "name": "My epic theme",
+    "target": ["Home", "Library"]
+}
+```
+
+### :material-compass: File watcher
 *Requires CSS Loader version 1.4.0+*
 
 If a file called `WATCH` is detected in the themes folder, CSS Loader will start watching file changes to any css file in any theme directory. This may lead to buggy behavior, so it's not enabled by default. This means that if any css file gets edited remotely, CSS Loader will automatically reload all themes, so you can 'live edit' css files.
+
+*Updated in CSS Loader version 1.9.0+*
+
+This feature can now be enabled from the settings menu of CSS Loader, under the name `Live CSS Editing`
