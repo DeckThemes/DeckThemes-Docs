@@ -56,6 +56,39 @@ Here's an example of the tabs the Big Picture Mode UI uses:
 
 <div style="clear: left;" />
 
+## Target Meanings
+
+Targets can be confusing, especially if it's your first time creating a theme. We recommend going down this list from top to bottom and choosing the first target you see that fits your theme.
+
+### Desktop Themes
+
+If your theme targets the desktop client, you _must_ choose one of these targets. Otherwise, your theme will be recommended for Big Picture Mode and Steam Deck.
+
+- **Desktop-Friends** - Your theme only changes the contents of the Friends List.
+- **Desktop-Library** - Your theme only changes the contents of the Library tab.
+- **Desktop-Store** - Your theme only changes the contents of the Store and Community tabs.
+- **Desktop-Tweak** - Your theme only changes a small part of the desktop client, like a font change or hiding an element.
+- **Desktop** - Your theme changes many parts of the desktop client, including those mentioned above.
+
+### Big Picture Mode Themes
+
+If your theme targets the Big Picture Mode and Steam Deck UI, it should fit in one of the following categories.
+
+- **Background** - Your theme only applies a background to an existing element, like the Recent Games section or Lock Screen.
+- **Keyboard** - Your theme only changes the default keyboard.
+- **Downloads** - Your theme only changes the contents of the Downloads tab.
+- **Friends and Chat** - Your theme only changes the contents of the Friends and Chat tab.
+- **Home** - Your theme only changes the contents of the Home tab.
+- **Library** - Your theme only changes the contents of the Library tab.
+- **Lock Screen** - Your theme only changes the contents of the Lock Screen.
+- **Media** - Your theme only changes the contents of the Media tab.
+- **Settings** - Your theme only changes the contents of the Settings tab.
+- **Store** - Your theme only changes the contents of the Store tab.
+- **Snippet** - Your theme is CSS-only and is an extremely minor change, like moving the keyboard to the top of the screen.
+- **Tweak** - Your theme only changes a small part of the BPM client, like changing the volume slider or loading animations.
+- **System-Wide** - Your theme changes many parts of the BPM client, including those mentioned above.
+- **Other** - Any other changes not listed above.
+
 ## The Format of a Theme
 
 CSS Loader is made to inject CSS into Steam tabs. In order to know what css files to inject where, it uses a definition file called `theme.json`. If you want to learn about all of the features you can use in your `theme.json`, check out the [Features](Features.md) page.
