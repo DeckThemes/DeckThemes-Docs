@@ -371,3 +371,10 @@ If a file called `WATCH` is detected in the themes folder, CSS Loader will start
 *Updated in CSS Loader version 1.9.0+*
 
 This feature can now be enabled from the settings menu of CSS Loader, under the name `Live CSS Editing`
+
+### :material-lock-plus: Load Order 
+*Requires CSS Loader version 1.6.2+*
+
+CSS Loader normally tries its best to load themes in such a way that they don't conflict with eachother. Sometimes however, it may be preferable to set load order manually.
+
+You can set the load order by creating a file called `PRIORITY` in the folder of a theme. Inside this priority file a number should be written, indicating the load order. A larger number gives more effective priority. A positive value gives more priority to the theme, a negative value gives less priority to the theme.
