@@ -178,6 +178,12 @@ For each entry in mappings, the object key is the file name (including the file 
 
 Once you have completed creating your pack, upload the folder containing it to the `/home/deck/homebrew/sounds` folder. If the sounds folder does not exist, you may not have the Audio Loader plugin properly installed. Depending on the type of pack you created, you should be able to find it in the music or sounds dropdowns. Select your pack and test it by either testing the functionality of each sound or using the [Decky Playground Plugin](https://github.com/SteamDeckHomebrew/decky-playground).
 
+## ❌ Common Errors
+
+### "My music pack isn't looping!"
+
+Due to quirks in the HTML Audio API, your music files may not loop if they have added metadata, open your `menu_music.mp3` file in an editor such as Mp3tag, and remove the album cover and any other metadata from it. Your file should then work.
+
 # 📨 Uploading a Pack
 
 Please refer to the [Submit to DeckThemes.com](/Submission) page for submitting an Audio Pack.
